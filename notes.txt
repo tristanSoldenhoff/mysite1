@@ -1,0 +1,15 @@
+to open site:
+http://localhost:8000/main_site/
+
+Admin User:
+python manage.py createsuperuser
+username: tristan
+email: left as blank
+password: soldenhoff
+
+to open admin site:
+http://localhost:8000/admin/
+
+to make changes to a model:
+python manage.py makemigrations
+python manage.py migrate

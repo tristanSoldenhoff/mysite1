@@ -1,0 +1,149 @@
+<!-- {% if latest_skill_list %}
+  <ul>
+  {% for skill in latest_skill_list %}
+    <li><a href="/polls/{{ skill.id }}/">{{
+skill.skill_text }}</a><li>
+  {% endfor %}
+  </ul>
+{% else %}
+  <p>No skills are available.</p>
+{% endif %} -->
+
+
+
+
+{% load static %}      <!-- THIS ENABLES CSS TO WORK WHENEVER YOU HAVE A DJANGO PROJECT       look at stetting file to check code for pointing to static folder -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tristan's website</title>
+  <!-- <link href="{% static 'home_page/style.css' %}" rel="stylesheet"> -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}"
+
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#personalProjects">Personal Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <div class="main">
+      <h1 class="headings">I Am <br> Tristan Soldenhoff</h1>
+    </div>
+  </section>
+
+
+
+  <section id="languages">
+    <div class="languages">
+      <h1>Languages</h1>
+      <div class="content">
+        <!-- <div class="left">
+          <h1>Skills</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro tenetur magni quo non voluptatum enim
+            cumque
+            commodi hic praesentium earum consequatur, quae sapiente ab ex nihil facilis corporis animi! Maxime.</p>
+          <a href="">Read More</a>
+        </div> -->
+        <div class="right">
+          <div class="line">
+            <div class="info">
+              <span>Python</span>
+              <span>20%</span>
+            </div>
+            <div class="bars Python">
+            </div>
+          </div>
+          <div class="line">
+            <div class="info">
+              <span>Java</span>
+              <span>10%</span>
+            </div>
+            <div class="bars Java">
+            </div>
+          </div>
+          <div class="line">
+            <div class="info">
+              <span>HTML</span>
+              <span>10%</span>
+            </div>
+            <div class="bars HTML">
+            </div>
+          </div>
+          <div class="line">
+            <div class="info">
+              <span>CSS</span>
+              <span>10%</span>
+            </div>
+            <div class="bars CSS">
+            </div>
+          </div>
+          <div class="line">
+            <div class="info">
+              <span>C</span>
+              <span>10%</span>
+            </div>
+            <div class="bars C">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h1 class="headingsSkills">Skills</h1>
+    <div class="gallery">
+      <img src="{% static 'skill_Icon/sk1.png' %}" alt="">
+      <img src="{% static 'skill_Icon/sk2.png' %}" alt="">
+      <img src="{% static 'skill_Icon/sk3.png' %}" alt="">
+      <img src="{% static 'skill_Icon/sk4.png' %}" alt="">
+      <img src="{% static 'skill_Icon/sk5.png' %}" alt="">
+      <img src="{% static 'skill_Icon/sk6.png' %}" alt="">
+      <img src="{% static 'skill_Icon/sk7.png' %}" alt="">
+      <img src="{% static 'skill_Icon/sk8.png' %}" alt="">
+      <img src="{% static 'skill_Icon/sk9.png' %}" alt="">
+      <img src="{% static 'skill_Icon/sk10.png' %}" alt="">
+      <img src="{% static 'skill_Icon/sk11.png' %}" alt="">
+      <img src="{% static 'skill_Icon/sk12.png' %}" alt="">
+      <img src="{% static 'skill_Icon/sk13.png' %}" alt="">
+      <img src="{% static 'skill_Icon/sk14.png' %}" alt="">
+    </div>
+  </section>
+
+
+  <section id="personalProjects">
+    <h1 class="headings">Personal Projects</h1>
+    <div class="row">
+      <div class="box">
+        <img src="{% static 'icon/btc.png' %}" alt="">
+        <h1 class="headings">Live Bitcoin Chart</h1>
+        <p> This section will feature crypto currency price data retrieved from coinmarketcap.com API.</p>
+        <!-- <a href="">Read More</a> -->
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h1 class="headings">Contact</h1>
+    <div class="links">
+      <h1 href="email">tsoldenhoff@gmail.com</h1>
+      <h1 href="LinkedIn">www.linkedin.com/in/tristan-soldenhoff</h1>
+      <a href="{% static 'cv/Tristan_Soldenhoff_CV.pdf' %}">CV</a>
+    </div>
+  </section>
+
+
+</body>
+
+</html>
