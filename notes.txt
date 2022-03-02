@@ -13,3 +13,9 @@ http://localhost:8000/admin/
 to make changes to a model:
 python manage.py makemigrations
 python manage.py migrate
+
+
+
+python anywhere:    
+workon websitevenv      -- this is the environment that was created 
+if forgotten name of virtual env: cd .virtualenvs/              then type: ls
